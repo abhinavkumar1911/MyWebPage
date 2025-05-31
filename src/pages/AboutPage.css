@@ -1,0 +1,27 @@
+.about-container ul {
+  list-style: none;               /* Removes default bullets */
+  padding-left: 0;                /* Reset padding */
+  margin-bottom: 20px;
+}
+
+.about-container li {
+  position: relative;
+  padding-left: 32px;             /* Space reserved for the checkmark */
+  margin-bottom: 12px;            /* More space between items */
+  line-height: 1.6;
+}
+
+.about-container li::before {
+  content: "✔️";
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 18px;
+}
+.carousel-caption h1 {
+  color: yellow;
+}
+
+.carousel-caption p {
+  color: lightgray;
+}

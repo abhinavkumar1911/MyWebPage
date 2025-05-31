@@ -1,0 +1,6 @@
+/* Navbar.css */
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #f8d210 !important;
+    border-bottom: 2px solid #f8d210;
+}
