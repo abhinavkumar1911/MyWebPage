@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Form from './pages/Form';
 import About from './pages/About';
@@ -16,7 +16,8 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+           <Route path="/" element={<Navigate to="/Home" replace />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/form" element={<Form />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<PageNotFound />} />
